@@ -1,3 +1,7 @@
+# IMPORTANT!
+
+The project was launched on Heroku and has run out of credits and is not running there anymore. There's a branch called "local" which works as intended, only run on your computer instead of cloud.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
