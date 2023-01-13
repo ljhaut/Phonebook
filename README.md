@@ -2,8 +2,8 @@
 
 The project was launched on Heroku and has run out of credits and is not running there anymore. There's a branch called "local" which works as intended, only run on your computer instead of cloud.
 
-You can run the program with following commands:
-server: npm run server
+You can run the program with following commands:\
+server: npm run server\
 client: npm start
 
 # Getting Started with Create React App
