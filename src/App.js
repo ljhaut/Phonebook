@@ -22,7 +22,7 @@ class App extends React.Component {
 
     componentDidMount() {
         console.log('did mount')
-        axios.get('https://lit-wildwood-03772.herokuapp.com/api/persons').then(response => {
+        axios.get('http://localhost:3001/persons').then(response => {
             console.log('promise fulfilled')
             console.log(response.data)
             this.setState({persons: response.data})
@@ -42,7 +42,7 @@ class App extends React.Component {
     deleteThis = (person) => {
         return () => {
             if (window.confirm(`poistetaanko ${person.name}`)){
-                const url = `https://lit-wildwood-03772.herokuapp.com/api/persons/${person.id}`
+                const url = `http://localhost:3001/persons/${person.id}`
                 axios.delete(url).then(response => {
                 console.log(response)
                 this.componentDidMount()
@@ -69,7 +69,7 @@ class App extends React.Component {
             })
         }
         else{
-            axios.post('https://lit-wildwood-03772.herokuapp.com/api/persons', nameObject).then(response => {
+            axios.post('http://localhost:3001/persons', nameObject).then(response => {
                 this.setState({
                     persons: this.state.persons.concat(response.data),
                     newName: '',
